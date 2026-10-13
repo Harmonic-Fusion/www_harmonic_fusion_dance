@@ -1,0 +1,1932 @@
+{
+  "about": "Edit dances here. family matches an id in families. row is time from earliest (0) at the top downward. lane is left-to-right position. parents.kind is \"lineage\" (solid arrow) or \"influence\" (dashed arrow). root marks a dance with nothing earlier. form is \"solo\" or \"group\" when it is not a lead-follow couple dance. styles are the shortcuts under Your styles.",
+  "families": [
+    {
+      "id": "african",
+      "label": "Africa and diaspora"
+    },
+    {
+      "id": "european",
+      "label": "Europe and ballroom"
+    },
+    {
+      "id": "other",
+      "label": "Indigenous and Roma roots"
+    },
+    {
+      "id": "swing",
+      "label": "Swing and North America"
+    },
+    {
+      "id": "blues",
+      "label": "Blues"
+    },
+    {
+      "id": "caribbean",
+      "label": "Caribbean and Mexico"
+    },
+    {
+      "id": "southam",
+      "label": "South America"
+    },
+    {
+      "id": "street",
+      "label": "Street and club"
+    },
+    {
+      "id": "modern",
+      "label": "Postmodern and fusion"
+    }
+  ],
+  "rootGroups": [
+    {
+      "id": "african",
+      "label": "African",
+      "roots": [
+        "african"
+      ]
+    },
+    {
+      "id": "european",
+      "label": "European",
+      "roots": [
+        "waltz",
+        "contradance",
+        "iberian"
+      ]
+    },
+    {
+      "id": "other",
+      "label": "Indigenous and Roma",
+      "roots": [
+        "roma",
+        "indigenous"
+      ]
+    },
+    {
+      "id": "modern",
+      "label": "Postmodern and somatic",
+      "roots": [
+        "contact",
+        "fiverhythms"
+      ]
+    }
+  ],
+  "styles": [
+    {
+      "id": "lindy",
+      "label": "Lindy Hop"
+    },
+    {
+      "id": "charleston",
+      "label": "Charleston"
+    },
+    {
+      "id": "balboa",
+      "label": "Balboa"
+    },
+    {
+      "id": "bluesscene",
+      "label": "Blues"
+    },
+    {
+      "id": "chicagotriple",
+      "label": "Chicago blues"
+    },
+    {
+      "id": "fusion",
+      "label": "Fusion"
+    }
+  ],
+  "dances": [
+    {
+      "id": "roma",
+      "short": "Roma traditions",
+      "name": "Roma (Gitano) traditions",
+      "years": "In Spain by 1425",
+      "place": "Andalusia and across Europe",
+      "family": "other",
+      "root": true,
+      "row": 0,
+      "lane": 0,
+      "parents": [],
+      "summary": "The Roma people reached Spain in the 1400s. In Andalusia their song and dance traditions joined Spanish ones to form flamenco.",
+      "look": "Rhythmic footwork, hand clapping (palmas), proud carriage",
+      "note": "A Moorish contribution to flamenco is often claimed and is debated."
+    },
+    {
+      "id": "waltz",
+      "short": "Waltz & polka",
+      "name": "Waltz, polka and mazurka",
+      "years": "1700s–1840s",
+      "place": "Austria, Germany, Bohemia, Poland",
+      "family": "european",
+      "root": true,
+      "row": 0,
+      "lane": 1,
+      "parents": [],
+      "summary": "The waltz (late 1700s), the polka (1830s–40s) and the mazurka brought the closed, turning couple embrace into ballrooms across Europe and its colonies. Immigrants carried them into tango, forró, Cajun and country dance, and the embrace sits under most partner dances in this map.",
+      "look": "Closed embrace, turning, upright posture"
+    },
+    {
+      "id": "contradance",
+      "short": "Jigs & contradance",
+      "name": "British and French folk dance and contradance",
+      "years": "1600s–1700s",
+      "place": "Britain, Ireland and France",
+      "family": "european",
+      "root": true,
+      "row": 0,
+      "lane": 3,
+      "parents": [],
+      "summary": "English country dance became the French contredanse and then the quadrille, spreading figures, lines and sets through the colonies. Irish and British jigs, reels and clog dancing belong to the same root and later met African rhythm in tap.",
+      "look": "Figures, lines and sets; percussive jig and clog footwork"
+    },
+    {
+      "id": "african",
+      "short": "African dance",
+      "name": "West and Central African dance",
+      "years": "Before 1600 on",
+      "place": "West and Central Africa, carried across the Atlantic",
+      "family": "african",
+      "root": true,
+      "row": 0,
+      "lane": 6,
+      "parents": [],
+      "summary": "The movement root of most dances here: bent knees and an earthward posture, pulse through the whole body, polyrhythm, improvisation inside a shared form, and call-and-response with musicians and the circle. Africa is many cultures, not one: Kongo traditions weigh heavily in Cuba and Brazil, Yoruba and other West African traditions elsewhere. There is no documented tradition of sustained one-on-one, mixed-gender couple dancing in pre-colonial sub-Saharan Africa, which is why couple embraces in this map come from European roots.",
+      "look": "Groundedness, pulse, polyrhythm, call-and-response, the circle"
+    },
+    {
+      "id": "iberian",
+      "short": "Iberian dance",
+      "name": "Iberian dance",
+      "years": "1500s onward",
+      "place": "Spain and Portugal",
+      "family": "european",
+      "root": true,
+      "row": 0,
+      "lane": 10,
+      "parents": [],
+      "summary": "Fandango, jota, seguidillas and the Spanish bolero, with guitar, castanets and stamped footwork. Spanish and Portuguese colonists carried courtship couple dances to the Americas, where they met African and Indigenous traditions in nearly every Latin dance.",
+      "look": "Courtship duets, guitar, castanets, zapateado"
+    },
+    {
+      "id": "indigenous",
+      "short": "Indigenous American",
+      "name": "Indigenous American dance",
+      "years": "Before 1500 on",
+      "place": "The Americas",
+      "family": "other",
+      "root": true,
+      "row": 0,
+      "lane": 11,
+      "parents": [],
+      "summary": "Indigenous peoples of the Americas had their own music, instruments and dances long before colonization. Their part in cumbia, son jarocho, carimbó and forró is widely cited, though how much of each dance it shaped is debated.",
+      "look": "Flutes, rattles, circle and procession dances"
+    },
+    {
+      "id": "juba",
+      "short": "Patting juba",
+      "name": "Juba and patting juba",
+      "years": "1700s–1800s",
+      "place": "Plantations of the American South",
+      "family": "african",
+      "form": "solo",
+      "row": 1,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "After the 1739 Stono Rebellion, South Carolina's 1740 Negro Act banned enslaved people from using drums and loud instruments. Rhythm moved into the body: slapping, patting and stamping, later called hambone. This body percussion feeds tap, the Charleston and solo jazz.",
+      "look": "Body percussion, rhythmic footwork"
+    },
+    {
+      "id": "ringshout",
+      "short": "Ring shout",
+      "name": "Ring shout",
+      "years": "1700s–1800s",
+      "place": "Gullah Geechee coast and Black churches across the South",
+      "family": "african",
+      "form": "group",
+      "row": 1,
+      "lane": 6,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A sacred counterclockwise circle of shuffling steps, clapping and call-and-response singing. The feet stay close to the floor and are traditionally not crossed. Its circle lives on in the jam and in the shared energy of a social floor.",
+      "look": "Shuffling counterclockwise circle, clapping, call-and-response"
+    },
+    {
+      "id": "contradanza",
+      "short": "Contradanza",
+      "name": "Contradanza and habanera",
+      "years": "1700s–1800s",
+      "place": "Cuba and the Caribbean",
+      "family": "caribbean",
+      "row": 1,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "contradance",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "French and Spanish contradances arrived in Cuba, partly with refugees from the Haitian Revolution, and absorbed African rhythm. The habanera rhythm that grew from it spread across the Americas into milonga, tango and maxixe.",
+      "look": "Habanera rhythm, figures for couples"
+    },
+    {
+      "id": "bomba",
+      "short": "Bomba",
+      "name": "Bomba",
+      "years": "Colonial era on",
+      "place": "Puerto Rico",
+      "family": "caribbean",
+      "form": "solo",
+      "row": 1,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Afro-Puerto Rican music and dance built as a conversation between dancer and drum: the dancer improvises moves (piquetes) and the lead drum, the primo, answers each one. It is one of the clearest examples of call-and-response in this map.",
+      "look": "Dancer leads the drum, skirt work, sharp accents"
+    },
+    {
+      "id": "candombe",
+      "short": "Candombe",
+      "name": "Candombe",
+      "years": "1800s onward",
+      "place": "Montevideo and Buenos Aires",
+      "family": "southam",
+      "form": "group",
+      "row": 1,
+      "lane": 13,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Drum-driven processions and dances of the Afro-Uruguayan and Afro-Argentine communities, still central to Uruguay's carnival. Its rhythms and steps fed milonga and tango, a contribution that was downplayed for much of the 1900s.",
+      "look": "Drum procession, rhythmic walking"
+    },
+    {
+      "id": "flamenco",
+      "short": "Flamenco",
+      "name": "Flamenco",
+      "years": "1700s–1800s",
+      "place": "Andalusia, Spain",
+      "family": "european",
+      "form": "solo",
+      "row": 2,
+      "lane": 0,
+      "parents": [
+        {
+          "id": "roma",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Flamenco formed in Andalusia from Roma and Spanish traditions, with song, guitar, palmas and dance as one art. Its footwork and carriage shaped Spanish dance and the paso doble.",
+      "look": "Zapateado footwork, arm and wrist work, compás",
+      "note": "A Moorish contribution is often claimed and is debated."
+    },
+    {
+      "id": "tap",
+      "short": "Tap",
+      "name": "Tap dance",
+      "years": "1840s onward",
+      "place": "New York's Five Points, then stages everywhere",
+      "family": "african",
+      "form": "solo",
+      "row": 2,
+      "lane": 4,
+      "parents": [
+        {
+          "id": "juba",
+          "kind": "lineage"
+        },
+        {
+          "id": "contradance",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "In New York's Five Points, African American dancers and Irish immigrants traded steps, and juba met the jig and the clog. William Henry Lane, known as Master Juba, was the famous early figure. Tap rhythms run through solo jazz and Charleston footwork.",
+      "look": "Rhythm footwork, trading phrases, improvisation"
+    },
+    {
+      "id": "slowdrag",
+      "short": "Slow drag",
+      "name": "Slow drag",
+      "years": "1800s onward",
+      "place": "Rural Southern jook joints, then city clubs",
+      "family": "blues",
+      "row": 2,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "One of the earliest blues dance idioms: close, low and slow, with very little travel across the floor. It was done both in small jook joints and in ballrooms. Black dancers in Chicago still called dancing to blues \"slow dragging\" into the 1940s.",
+      "look": "Close embrace, weight in the floor, minimal travel; the slow grind is a related jukin' idiom"
+    },
+    {
+      "id": "cumbia",
+      "short": "Cumbia",
+      "name": "Cumbia",
+      "years": "Colonial era on",
+      "place": "Caribbean coast of Colombia",
+      "family": "caribbean",
+      "row": 2,
+      "lane": 11,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "indigenous",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Grew on Colombia's Caribbean coast from African drumming, Indigenous flutes and Spanish song. Originally a circle courtship dance, it became a couple dance and spread across Latin America, with strong regional forms in Mexico, Peru and Argentina.",
+      "look": "Shuffling steps, circling partners, swaying hips"
+    },
+    {
+      "id": "sonjarocho",
+      "short": "Son jarocho",
+      "name": "Son jarocho",
+      "years": "1700s onward",
+      "place": "Veracruz, Mexico",
+      "family": "caribbean",
+      "row": 2,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "indigenous",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A music and dance tradition of southern Veracruz with Spanish, African and Indigenous roots. Dancers stamp rhythms on a wooden platform, the tarima, as part of the music, often at community fandangos.",
+      "look": "Zapateado on the tarima, couples facing without an embrace"
+    },
+    {
+      "id": "zamacueca",
+      "short": "Zamacueca",
+      "name": "Zamacueca",
+      "years": "1820s",
+      "place": "Lima, Peru",
+      "family": "southam",
+      "row": 2,
+      "lane": 14,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A handkerchief courtship dance from Lima that mixed Afro-Peruvian and Spanish fandango traditions. It spread along the Pacific coast and became the parent of the Peruvian marinera and the Chilean cueca.",
+      "look": "Handkerchiefs, pursuit and response, no embrace"
+    },
+    {
+      "id": "cakewalk",
+      "short": "Cakewalk",
+      "name": "Cakewalk",
+      "years": "1850s–1900s",
+      "place": "Plantations, then minstrel and Broadway stages",
+      "family": "african",
+      "row": 3,
+      "lane": 3,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "contradance",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Couples promenaded with high steps and exaggerated elegance, parodying white ballroom manners such as the grand march, sometimes for the prize of a cake. Around the 1890s it became the first African American dance craze across the US and Europe.",
+      "look": "High-stepping promenade, leaning back, comic elegance"
+    },
+    {
+      "id": "merengue",
+      "short": "Merengue",
+      "name": "Merengue",
+      "years": "Mid-1800s on",
+      "place": "Dominican Republic",
+      "family": "caribbean",
+      "row": 3,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "contradanza",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Grew from contradanza-family dances and African rhythm. Once looked down on, it was made the national dance under the dictator Rafael Trujillo (1930–61). Its simple two-step with hip action is one of the easiest Latin dances to start with.",
+      "look": "Marching two-step, hip action, wrapping turns"
+    },
+    {
+      "id": "maxixe",
+      "short": "Maxixe",
+      "name": "Maxixe",
+      "years": "1870s–1910s",
+      "place": "Rio de Janeiro",
+      "family": "southam",
+      "row": 3,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        },
+        {
+          "id": "contradanza",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Mixed the polka and the habanera with Afro-Brazilian lundu into a close, swaying couple dance. It caused scandal at home, became an international craze in the 1910s, and partnered samba grew from it.",
+      "look": "Close hold, swaying, syncopated steps"
+    },
+    {
+      "id": "milonga",
+      "short": "Milonga",
+      "name": "Milonga",
+      "years": "1870s onward",
+      "place": "Buenos Aires and Montevideo",
+      "family": "southam",
+      "row": 3,
+      "lane": 13,
+      "parents": [
+        {
+          "id": "candombe",
+          "kind": "lineage"
+        },
+        {
+          "id": "contradanza",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A lively couple dance from the Río de la Plata that drew on the habanera and candombe. It is tango's main ancestor. Today milonga is also a faster, more rhythmic dance within tango, and the word names a tango social event.",
+      "look": "Quick rhythmic walking, double-time steps"
+    },
+    {
+      "id": "rumba",
+      "short": "Afro-Cuban rumba",
+      "name": "Afro-Cuban rumba",
+      "years": "1880s onward",
+      "place": "Havana and Matanzas",
+      "family": "caribbean",
+      "row": 4,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Created by Afro-Cubans after slavery ended in Cuba (1886), with strong Kongo roots and Spanish song. Yambú and guaguancó are couple dances; guaguancó is a playful pursuit in which the man tries a sudden symbolic thrust (vacunao) that the woman covers or deflects. Columbia is a competitive solo for men.",
+      "look": "Pursuit and deflection, grounded torso, drum dialogue",
+      "note": "Ballroom \"rumba\" is not this dance; it comes from son and bolero."
+    },
+    {
+      "id": "danzon",
+      "short": "Danzón",
+      "name": "Danzón",
+      "years": "1879 onward",
+      "place": "Matanzas, Cuba; later Mexico",
+      "family": "caribbean",
+      "row": 4,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "contradanza",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "First presented by Miguel Failde in 1879, danzón turned the contradanza into a refined couple dance with pauses for conversation. It became Cuba's national dance and later faded there, but it is still a living social dance in Veracruz and Mexico City. Mambo and cha-cha grew from it.",
+      "look": "Elegant closed hold, small steps, pauses"
+    },
+    {
+      "id": "son",
+      "short": "Son cubano",
+      "name": "Son cubano",
+      "years": "Late 1800s on",
+      "place": "Eastern Cuba, then Havana",
+      "family": "caribbean",
+      "row": 4,
+      "lane": 9,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Spanish guitar and song forms met African rhythm and the clave. Son's couple dance and music became the base of the 1930s \"rhumba\" craze, mambo, cha-cha, casino and salsa. Son records also sailed back to Africa and inspired Congolese rumba.",
+      "look": "Clave feel, contained hips, close couple hold"
+    },
+    {
+      "id": "bolero",
+      "short": "Cuban bolero",
+      "name": "Cuban bolero",
+      "years": "1880s onward",
+      "place": "Santiago de Cuba",
+      "family": "caribbean",
+      "row": 4,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "contradanza",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A slow romantic song form from Cuban trova, often traced to José \"Pepe\" Sánchez's \"Tristezas\" (1883), danced in close embrace. It is a different thing from the older Spanish bolero. It feeds bachata and the ballroom rumba and bolero.",
+      "look": "Slow, close, smooth"
+    },
+    {
+      "id": "carimbo",
+      "short": "Carimbó",
+      "name": "Carimbó",
+      "years": "1800s onward",
+      "place": "Pará, Amazonian Brazil",
+      "family": "southam",
+      "row": 4,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "indigenous",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A circle and couple dance from Pará, named after a drum, mixing Indigenous, African and Portuguese traditions. Its swirling skirts and swaying hips fed the lambada in the 1980s.",
+      "look": "Wide skirts, circling, swaying hips"
+    },
+    {
+      "id": "marinera",
+      "short": "Marinera",
+      "name": "Marinera",
+      "years": "Late 1800s on",
+      "place": "Peru",
+      "family": "southam",
+      "row": 4,
+      "lane": 14,
+      "parents": [
+        {
+          "id": "zamacueca",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Peru's best-known couple dance, a handkerchief courtship duet that grew from the zamacueca and took the name marinera in the late 1800s. Regional styles range from the northern marinera, often with horses, to Lima's.",
+      "look": "Handkerchiefs, flirtation without touching, footwork"
+    },
+    {
+      "id": "cueca",
+      "short": "Cueca",
+      "name": "Cueca",
+      "years": "1800s onward",
+      "place": "Chile, Argentina, Bolivia",
+      "family": "southam",
+      "row": 4,
+      "lane": 15,
+      "parents": [
+        {
+          "id": "zamacueca",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A handkerchief courtship dance descended from the zamacueca. The couple circles without touching, with the man pursuing and the woman responding. Chile made the cueca its national dance in 1979.",
+      "look": "Handkerchiefs, circling, stamping"
+    },
+    {
+      "id": "cajun",
+      "short": "Cajun dance",
+      "name": "Cajun dance",
+      "years": "1900s onward",
+      "place": "South Louisiana",
+      "family": "swing",
+      "row": 5,
+      "lane": 1,
+      "parents": [
+        {
+          "id": "contradance",
+          "kind": "lineage"
+        },
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "French Acadians exiled to Louisiana kept fiddle and accordion music and danced the waltz, two-step and Cajun jitterbug. It shares dance halls and musicians with zydeco.",
+      "look": "Waltz, two-step, Cajun jitterbug"
+    },
+    {
+      "id": "ragtime",
+      "short": "Ragtime dances",
+      "name": "Ragtime couple dances",
+      "years": "1900s–1910s",
+      "place": "Black dance halls, then a national craze",
+      "family": "swing",
+      "row": 5,
+      "lane": 3,
+      "parents": [
+        {
+          "id": "cakewalk",
+          "kind": "lineage"
+        },
+        {
+          "id": "slowdrag",
+          "kind": "influence"
+        }
+      ],
+      "summary": "The turkey trot, grizzly bear, bunny hug and Texas Tommy came out of Black dance halls and were condemned as indecent as they spread. The Texas Tommy, danced in San Francisco around 1910, already had a breakaway, the move the Lindy Hop later made central.",
+      "look": "Animal-dance styling, one-step walking, early breakaway"
+    },
+    {
+      "id": "plena",
+      "short": "Plena",
+      "name": "Plena",
+      "years": "Early 1900s",
+      "place": "Ponce, Puerto Rico",
+      "family": "caribbean",
+      "form": "group",
+      "row": 5,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "bomba",
+          "kind": "lineage"
+        },
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A narrative song form, sometimes called the sung newspaper, played on hand drums called panderos. Its dancing is looser and more social than a set couple dance, and with bomba it is a key Afro-Puerto Rican tradition.",
+      "look": "Social dancing to pandero rhythm"
+    },
+    {
+      "id": "forro",
+      "short": "Forró",
+      "name": "Forró",
+      "years": "1900s onward",
+      "place": "Northeast Brazil",
+      "family": "southam",
+      "row": 5,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        },
+        {
+          "id": "indigenous",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Accordion, zabumba drum and triangle music of Brazil's Northeast, danced close in styles such as xote, baião and arrasta-pé. European polka and schottische (xote comes from schottische) mixed with African and Indigenous rhythm.",
+      "look": "Close embrace, side-to-side basic, quick turns"
+    },
+    {
+      "id": "tango",
+      "short": "Argentine tango",
+      "name": "Argentine tango",
+      "years": "1880s–1910s on",
+      "place": "Buenos Aires and Montevideo",
+      "family": "southam",
+      "row": 5,
+      "lane": 13,
+      "parents": [
+        {
+          "id": "milonga",
+          "kind": "lineage"
+        },
+        {
+          "id": "candombe",
+          "kind": "lineage"
+        },
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Tango grew in the port neighborhoods from milonga, candombe and the waltzes, polkas and mazurkas of European immigrants. Paris went tango-mad in 1913. Tango is a major source for fusion's close embrace and walking connection.",
+      "look": "Close embrace, walking, ochos, pauses",
+      "note": "The African contribution to tango was downplayed for much of the 1900s; today it is debated in degree, not in existence."
+    },
+    {
+      "id": "pasodoble",
+      "short": "Paso doble",
+      "name": "Paso doble",
+      "years": "Early 1900s",
+      "place": "Spain and France",
+      "family": "european",
+      "row": 6,
+      "lane": 0,
+      "parents": [
+        {
+          "id": "iberian",
+          "kind": "lineage"
+        },
+        {
+          "id": "flamenco",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Built on Spanish military march music and bullfight imagery, with the leader as matador and the follower as the cape. It entered French and then English ballrooms and became one of the International Latin dances.",
+      "look": "March steps, strong frame, dramatic shapes"
+    },
+    {
+      "id": "ballroom",
+      "short": "Foxtrot & ballroom",
+      "name": "Foxtrot and ballroom codification",
+      "years": "1910s–1950s",
+      "place": "Society ballrooms, then dance-studio chains",
+      "family": "european",
+      "row": 6,
+      "lane": 2,
+      "parents": [
+        {
+          "id": "ragtime",
+          "kind": "lineage"
+        },
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Vernon and Irene Castle, working with Black bandleader James Reese Europe, turned ragtime dances into refined society steps; the foxtrot followed around 1914. Studio chains such as Arthur Murray later standardized swing and Latin dances into teachable syllabi.",
+      "look": "Upright posture, smooth travel, standardized figures",
+      "note": "A pattern repeats here: a Black or Afro-Latin dance crosses over, white popularizers get the credit, and the dance becomes more upright and codified."
+    },
+    {
+      "id": "charleston",
+      "short": "Charleston",
+      "name": "Charleston",
+      "years": "1910s–1920s",
+      "place": "Black communities of the Southeast, then Broadway",
+      "family": "swing",
+      "row": 6,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "juba",
+          "kind": "lineage"
+        },
+        {
+          "id": "ringshout",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Swiveling feet, kicks and a bouncing pulse, with roots in Black communities around Charleston, South Carolina. The 1923 all-Black Broadway show Runnin' Wild, with James P. Johnson's song, set off a worldwide craze in 1925–26. It was danced solo, side by side and partnered, and it lives on inside the Lindy Hop.",
+      "look": "Swivels and kicks; 20s style vs. 30s swing-out style",
+      "note": "Its exact origin is debated. Researchers traced the steps to Black communities in the Southeast well before the Broadway craze."
+    },
+    {
+      "id": "gafieira",
+      "short": "Samba de gafieira",
+      "name": "Samba de gafieira",
+      "years": "1910s–1940s",
+      "place": "Rio de Janeiro dance halls",
+      "family": "southam",
+      "row": 6,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "maxixe",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Urban samba took shape in Rio in the 1910s. In the working-class dance halls called gafieiras, couples built a partnered samba from maxixe and ballroom moves. Ballroom samba was later standardized from Brazilian samba.",
+      "look": "Partnered samba, playful footwork, malandro styling"
+    },
+    {
+      "id": "lindy",
+      "short": "Lindy Hop",
+      "name": "Lindy Hop",
+      "years": "c. 1928 onward",
+      "place": "Savoy Ballroom, Harlem",
+      "family": "swing",
+      "row": 7,
+      "lane": 3,
+      "parents": [
+        {
+          "id": "ragtime",
+          "kind": "lineage"
+        },
+        {
+          "id": "charleston",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Born in Harlem's Black social dance world, with the Savoy Ballroom (opened 1926) as its home floor. It joined the breakaway and the Charleston to the swinging 4/4 of big-band jazz. The swing out sends partners apart to improvise and brings them back. Frankie Manning and Frieda Washington danced the first air step at the Savoy around 1935, and Whitey's Lindy Hoppers took the dance into films.",
+      "look": "Swing out, breakaways, solo improvisation, air steps",
+      "note": "The story that it was named for Lindbergh's 1927 transatlantic \"hop\" at a 1928 dance marathon is popular lore and hard to verify."
+    },
+    {
+      "id": "solojazz",
+      "short": "Solo jazz",
+      "name": "Solo jazz: Shim Sham and Big Apple",
+      "years": "1920s–1930s",
+      "place": "Harlem clubs; Columbia, South Carolina",
+      "family": "african",
+      "form": "solo",
+      "row": 7,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "charleston",
+          "kind": "lineage"
+        },
+        {
+          "id": "tap",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Vernacular jazz steps danced alone or in lines and circles. The Shim Sham began as a tap routine in the late 1920s and became the swing scene's line dance. The Big Apple circle dance came from a Black club in Columbia, South Carolina, and became a national craze in 1937. These steps fill Lindy breakaways and blues solo moments.",
+      "look": "Shorty George, Suzie Q, truckin', boogie back"
+    },
+    {
+      "id": "ballroomin",
+      "short": "Ballroomin' & strut",
+      "name": "Ballroomin' and the strut",
+      "years": "1920s–1940s",
+      "place": "Urban ballrooms and dance halls",
+      "family": "blues",
+      "row": 7,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "slowdrag",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Blues idioms danced in more formal halls to 1920s blues and jazz: upright, elegant and traveling. The strut often went with New Orleans-style jazz blues. Blues dancers today group the historical idioms as jukin' (small, low, local) and ballroomin' (formal, traveling).",
+      "look": "Upright carriage, traveling walks, elegance"
+    },
+    {
+      "id": "tangovals",
+      "short": "Tango vals",
+      "name": "Tango vals",
+      "years": "1920s onward",
+      "place": "Buenos Aires",
+      "family": "southam",
+      "row": 7,
+      "lane": 13,
+      "parents": [
+        {
+          "id": "tango",
+          "kind": "lineage"
+        },
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Tango dancers' waltz, danced in tango embrace with continuous turning. With tango and milonga it is one of the three rhythms played at a tango social event.",
+      "look": "Continuous turning, flowing 3/4 walk"
+    },
+    {
+      "id": "balboa",
+      "short": "Balboa",
+      "name": "Balboa",
+      "years": "1930s",
+      "place": "Balboa Peninsula and ballrooms of Southern California",
+      "family": "swing",
+      "row": 8,
+      "lane": 1,
+      "parents": [
+        {
+          "id": "ballroom",
+          "kind": "influence"
+        },
+        {
+          "id": "lindy",
+          "kind": "influence"
+        }
+      ],
+      "summary": "A close-embrace swing dance with small, fast, shuffling footwork, suited to crowded floors and very fast tempos. Pure Bal stays chest to chest; Bal-swing adds turns and throw-outs from the swing era. It rides African American jazz rhythm, but the dance itself was developed mostly by white Southern California dancers.",
+      "look": "Chest-to-chest connection, shuffles, lollies, come-arounds",
+      "note": "Its exact parentage is unclear, so both links are dashed. The popular story that ballrooms banned Lindy and Charleston, pushing dancers into small steps, is unverified."
+    },
+    {
+      "id": "jitterbug",
+      "short": "Jitterbug & ECS",
+      "name": "Jitterbug, jive and East Coast Swing",
+      "years": "1930s–1950s",
+      "place": "Across the US, then overseas with GIs",
+      "family": "swing",
+      "row": 8,
+      "lane": 2,
+      "parents": [
+        {
+          "id": "lindy",
+          "kind": "lineage"
+        },
+        {
+          "id": "ballroom",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "As the Lindy reached the mainstream it became the jitterbug, a loose name for swing dancing. GIs carried it overseas, where it became jive. Studios simplified it into a 6-count East Coast Swing that could be taught to anyone.",
+      "look": "6-count basic, triple steps, rock step"
+    },
+    {
+      "id": "shag",
+      "short": "Shag family",
+      "name": "Shag family",
+      "years": "1930s–1950s",
+      "place": "Carolinas, St. Louis, college campuses",
+      "family": "swing",
+      "row": 8,
+      "lane": 4,
+      "parents": [
+        {
+          "id": "charleston",
+          "kind": "influence"
+        },
+        {
+          "id": "lindy",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Collegiate shag is hoppy and fast; St. Louis shag adds Charleston-like kicks; Carolina shag grew in the 1940s–50s at beach pavilions to rhythm and blues jukebox records. They are cousins of the Lindy rather than direct children.",
+      "look": "Hopping footwork, fast tempos, slotted beach style",
+      "note": "Origins of Collegiate shag are debated, so the links are dashed."
+    },
+    {
+      "id": "mambo",
+      "short": "Mambo",
+      "name": "Rumba craze and mambo",
+      "years": "1930s–1950s",
+      "place": "Havana, Mexico City and New York's Palladium",
+      "family": "caribbean",
+      "row": 8,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "son",
+          "kind": "lineage"
+        },
+        {
+          "id": "danzon",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Son went worldwide as the 1930s \"rhumba\" craze. Mambo grew from son and danzón (a 1938 danzón called \"Mambo\" by Orestes López is often cited), and Pérez Prado's band made it a craze. New York's Palladium Ballroom became an integrated home for mambo dancers, much as the Savoy had been for the Lindy.",
+      "look": "Breaking on 2, shines, big band energy"
+    },
+    {
+      "id": "country",
+      "short": "Country & two-step",
+      "name": "Western swing and country dance",
+      "years": "1930s onward",
+      "place": "Texas, Oklahoma, then the US",
+      "family": "swing",
+      "row": 9,
+      "lane": 1,
+      "parents": [
+        {
+          "id": "waltz",
+          "kind": "lineage"
+        },
+        {
+          "id": "ballroom",
+          "kind": "influence"
+        },
+        {
+          "id": "jitterbug",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Western swing bands mixed fiddle music with jazz and blues for dancers in Texas and Oklahoma. Country dance halls developed the two-step and country swing, drawing on the polka, foxtrot and jitterbug.",
+      "look": "Traveling two-step, country swing turns",
+      "note": "The exact lineage of the Texas two-step is debated."
+    },
+    {
+      "id": "wcs",
+      "short": "West Coast Swing",
+      "name": "West Coast Swing",
+      "years": "1940s onward",
+      "place": "Southern California",
+      "family": "swing",
+      "row": 9,
+      "lane": 3,
+      "parents": [
+        {
+          "id": "lindy",
+          "kind": "lineage"
+        },
+        {
+          "id": "ballroom",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Lindy danced in a slot in Southern California, taught by studios as Western Swing and named West Coast Swing later. It moved from swing to rhythm and blues and then to contemporary pop. Its elastic connection and anchor are major ingredients in fusion.",
+      "look": "Slot, elastic stretch and compression, anchor"
+    },
+    {
+      "id": "texasshuffle",
+      "short": "Texas shuffle",
+      "name": "Texas shuffle",
+      "years": "1940s onward",
+      "place": "Texas musicians playing in California",
+      "family": "blues",
+      "row": 9,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "slowdrag",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A blues idiom danced to the West Coast blues that Texas musicians played in California. It uses a sliding, shuffling motion over a subtle triple pulse.",
+      "look": "Sliding, shuffling steps, subtle triple pulse"
+    },
+    {
+      "id": "rocknroll",
+      "short": "Rock 'n' roll",
+      "name": "Rock 'n' roll and the Twist",
+      "years": "1950s–1960s",
+      "place": "Teen hops and TV dance shows",
+      "family": "swing",
+      "row": 10,
+      "lane": 2,
+      "parents": [
+        {
+          "id": "jitterbug",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Rhythm and blues became rock 'n' roll, and the jitterbug became rock 'n' roll dancing. Then the Twist (1960) moved mainstream youth to dancing apart, and touch dancing faded from pop dance floors for about a decade.",
+      "look": "Jitterbug basics, then solo twisting"
+    },
+    {
+      "id": "urbanswing",
+      "short": "Hand dance & bop",
+      "name": "DC Hand Dance, Philly Bop and St. Louis Imperial",
+      "years": "1950s onward",
+      "place": "Washington DC, Philadelphia, St. Louis",
+      "family": "swing",
+      "row": 10,
+      "lane": 4,
+      "parents": [
+        {
+          "id": "lindy",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "When the big bands faded, Black communities kept swinging to rhythm and blues and soul in their own regional styles. DC Hand Dance, Philly Bop and St. Louis Imperial carry the Lindy and jitterbug lineage in unbroken lines that the 1980s revival mostly overlooked.",
+      "look": "Smooth footwork, hand-to-hand connection, R&B and soul"
+    },
+    {
+      "id": "semba",
+      "short": "Semba",
+      "name": "Semba",
+      "years": "1950s onward",
+      "place": "Luanda, Angola",
+      "family": "african",
+      "row": 10,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Angola's lively urban couple dance of the mid-1900s, danced to semba music. Kizomba grew from it in the 1980s.",
+      "look": "Playful partnering, quick steps, tricks"
+    },
+    {
+      "id": "soukous",
+      "short": "Congolese rumba",
+      "name": "Congolese rumba and soukous",
+      "years": "1940s onward",
+      "place": "Kinshasa and Brazzaville",
+      "family": "african",
+      "row": 10,
+      "lane": 6,
+      "parents": [
+        {
+          "id": "son",
+          "kind": "lineage"
+        },
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Cuban son records reached Central Africa in the 1930s and 40s, and Congolese bands rebuilt the sound into their own rumba, later the faster soukous. Music crossed the Atlantic and came back, and these records later drove champeta in Colombia.",
+      "look": "Hip-led grooves, sebene guitar sections"
+    },
+    {
+      "id": "chicagotriple",
+      "short": "Chicago Triple",
+      "name": "Chicago Triple",
+      "years": "1950s",
+      "place": "Chicago",
+      "family": "blues",
+      "row": 10,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "slowdrag",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "A blues idiom created in Chicago for the electrified, shuffle-rhythm Chicago blues that came with the Great Migration: Muddy Waters, Howlin' Wolf and the Chess Records sound. Chicago blues is a music style first; the Chicago Triple is how dancers moved to it.",
+      "look": "Triple pulse on a shuffle groove, grounded weight"
+    },
+    {
+      "id": "chacha",
+      "short": "Cha-cha-chá",
+      "name": "Cha-cha-chá",
+      "years": "Early 1950s",
+      "place": "Havana",
+      "family": "caribbean",
+      "row": 10,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "danzon",
+          "kind": "lineage"
+        },
+        {
+          "id": "mambo",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Violinist Enrique Jorrín created the cha-cha-chá in the early 1950s by slowing and simplifying danzón-mambo rhythms so dancers could follow. The name imitates the sound of the feet on the triple. Ballroom studios standardized it quickly.",
+      "look": "Triple step, Cuban hip action, playful timing"
+    },
+    {
+      "id": "kompa",
+      "short": "Kompa",
+      "name": "Kompa",
+      "years": "Mid-1950s on",
+      "place": "Haiti",
+      "family": "caribbean",
+      "row": 10,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "merengue",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Bandleader Nemours Jean-Baptiste launched compas direct in 1955, drawing on Dominican merengue. Danced close with a slow hip sway, it led into French Antillean zouk.",
+      "look": "Close embrace, slow hip sway, small steps"
+    },
+    {
+      "id": "ballroomlatin",
+      "short": "Ballroom Latin",
+      "name": "Ballroom Latin: International Latin and American Rhythm",
+      "years": "1940s–1960s",
+      "place": "English and US dance studios",
+      "family": "european",
+      "row": 11,
+      "lane": 0,
+      "parents": [
+        {
+          "id": "ballroom",
+          "kind": "lineage"
+        },
+        {
+          "id": "chacha",
+          "kind": "lineage"
+        },
+        {
+          "id": "bolero",
+          "kind": "lineage"
+        },
+        {
+          "id": "gafieira",
+          "kind": "lineage"
+        },
+        {
+          "id": "pasodoble",
+          "kind": "lineage"
+        },
+        {
+          "id": "jitterbug",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "English teachers codified International Latin (cha-cha, samba, rumba, paso doble, jive) for competition, and US studios built American Rhythm (cha-cha, rumba, swing, bolero, mambo). They drew on Cuban, Brazilian, Spanish and swing sources and standardized posture and figures.",
+      "look": "Straight legs, Cuban motion, standardized figures",
+      "note": "Ballroom rumba is based on son and bolero, not Afro-Cuban rumba."
+    },
+    {
+      "id": "eurorock",
+      "short": "Rock & Modern Jive",
+      "name": "French rock, Modern Jive and boogie woogie",
+      "years": "1950s–1980s",
+      "place": "France, Britain and Central Europe",
+      "family": "swing",
+      "row": 11,
+      "lane": 2,
+      "parents": [
+        {
+          "id": "rocknroll",
+          "kind": "lineage"
+        },
+        {
+          "id": "jitterbug",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "After GIs brought jitterbug and rock 'n' roll to Europe, France developed le rock, Britain built Modern Jive (Ceroc began in 1980), and competitive boogie woogie and acrobatic rock 'n' roll grew in Central Europe.",
+      "look": "Simple counts, many turns, fast leads"
+    },
+    {
+      "id": "soulfunk",
+      "short": "Soul & funk dance",
+      "name": "Soul and funk social dance",
+      "years": "1960s–1970s",
+      "place": "Black dance floors and TV's Soul Train",
+      "family": "street",
+      "form": "solo",
+      "row": 11,
+      "lane": 6,
+      "parents": [
+        {
+          "id": "rocknroll",
+          "kind": "lineage"
+        },
+        {
+          "id": "solojazz",
+          "kind": "influence"
+        }
+      ],
+      "summary": "James Brown's footwork, the Soul Train line (on TV from 1971) and a stream of named dances carried Black vernacular movement forward after rock 'n' roll. Funk's sharp hits and freezes set up popping, locking and breaking.",
+      "look": "Slides, spins, hits, the Soul Train line"
+    },
+    {
+      "id": "zydeco",
+      "short": "Zydeco",
+      "name": "Zydeco",
+      "years": "1950s onward",
+      "place": "Louisiana Creole communities",
+      "family": "blues",
+      "row": 11,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "cajun",
+          "kind": "lineage"
+        },
+        {
+          "id": "slowdrag",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Louisiana Creole music, led by Clifton Chenier from the 1950s, joins Creole French songs, accordion and washboard with rhythm and blues. Its partner dance uses a syncopated, grounded step and shares much with blues dancing.",
+      "look": "Syncopated basic, grounded bounce, close or open hold"
+    },
+    {
+      "id": "salsa",
+      "short": "Salsa",
+      "name": "Salsa",
+      "years": "1960s–70s on",
+      "place": "New York, Puerto Rico, Cuba, Colombia",
+      "family": "caribbean",
+      "row": 11,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "mambo",
+          "kind": "lineage"
+        },
+        {
+          "id": "son",
+          "kind": "lineage"
+        },
+        {
+          "id": "bomba",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Puerto Rican and Cuban musicians in New York built salsa from son and mambo, with Puerto Rican bomba and plena feeding the sound. Dancers developed regional styles: New York On2 and Los Angeles On1 in a slot, Cuban casino in a circle, and Cali's fast footwork.",
+      "look": "Cross-body lead, spins, shines"
+    },
+    {
+      "id": "casino",
+      "short": "Casino & rueda",
+      "name": "Casino and rueda de casino",
+      "years": "1950s onward",
+      "place": "Havana",
+      "family": "caribbean",
+      "row": 11,
+      "lane": 9,
+      "parents": [
+        {
+          "id": "son",
+          "kind": "lineage"
+        },
+        {
+          "id": "chacha",
+          "kind": "lineage"
+        },
+        {
+          "id": "jitterbug",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Cuban couple dancing to son and later salsa, with partners circling each other rather than dancing in a line. In rueda de casino, several couples dance in a circle and swap partners on a caller's commands. It is the base of Cuban-style salsa.",
+      "look": "Circular movement, dile que no, rueda calls",
+      "note": "Some writers see American swing and rock 'n' roll influence in its turns; the link is debated."
+    },
+    {
+      "id": "bachata",
+      "short": "Bachata",
+      "name": "Bachata",
+      "years": "1960s onward",
+      "place": "Dominican Republic",
+      "family": "caribbean",
+      "row": 11,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "bolero",
+          "kind": "lineage"
+        },
+        {
+          "id": "son",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Working-class Dominican guitar music drawing on bolero and son, first recorded in the early 1960s and long looked down on. The dance spread worldwide in the 2000s, branching into Dominican, moderna, sensual and urbana styles.",
+      "look": "Side basic with a tap or hip on 4, close frame"
+    },
+    {
+      "id": "chicagostep",
+      "short": "Chicago Stepping",
+      "name": "Chicago Stepping",
+      "years": "1970s onward",
+      "place": "South and West Side Chicago",
+      "family": "swing",
+      "row": 12,
+      "lane": 4,
+      "parents": [
+        {
+          "id": "lindy",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Grew from the Chicago bop of the 1950s and 60s, itself a descendant of the jitterbug and Lindy in Black Chicago. Smooth and gliding, danced to rhythm and blues and soul. It is one of the clearest living lines from the swing era in Black social dance.",
+      "look": "Gliding steps, smooth turns, steppers' music"
+    },
+    {
+      "id": "hiphop",
+      "short": "Hip-hop & house",
+      "name": "Hip-hop and house dance",
+      "years": "1970s–1980s",
+      "place": "Bronx, California, Chicago and New York clubs",
+      "family": "street",
+      "form": "solo",
+      "row": 12,
+      "lane": 6,
+      "parents": [
+        {
+          "id": "soulfunk",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Breaking grew at Bronx block parties in the 1970s, popping and locking on the West Coast, and house dance in Chicago and New York clubs in the 1980s. Their grooves, isolations and freezes now show up in urban kiz, bachata urbana, modern West Coast Swing and fusion.",
+      "look": "Grooves, isolations, footwork, freezes"
+    },
+    {
+      "id": "contact",
+      "short": "Contact improv",
+      "name": "Contact improvisation",
+      "years": "1972",
+      "place": "US postmodern dance (Steve Paxton)",
+      "family": "modern",
+      "root": true,
+      "row": 12,
+      "lane": 7,
+      "parents": [],
+      "summary": "A postmodern dance form built on shared weight, rolling points of contact and improvisation, with no lead or follow. It does not come from the social dance lines in this map. It entered partner dancing through fusion, bringing weight sharing, counterbalance and listening exercises.",
+      "look": "Shared weight, rolling point of contact, counterbalance"
+    },
+    {
+      "id": "hustle",
+      "short": "Hustle",
+      "name": "Hustle",
+      "years": "1970s",
+      "place": "New York disco clubs",
+      "family": "caribbean",
+      "row": 12,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "salsa",
+          "kind": "lineage"
+        },
+        {
+          "id": "jitterbug",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Puerto Rican and Black dancers in New York brought touch dancing back in the disco era. Latin Hustle mixed salsa-style spins with swing-style partnering on a smooth, continuous rhythm.",
+      "look": "Continuous spins, smooth travel, disco tempos"
+    },
+    {
+      "id": "zouk",
+      "short": "Zouk",
+      "name": "Zouk",
+      "years": "1980s onward",
+      "place": "Guadeloupe and Martinique",
+      "family": "caribbean",
+      "row": 12,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "kompa",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "The band Kassav' created zouk from Antillean traditions and kompa around 1980. Its slow form, zouk love, is danced close and shaped Angolan kizomba music and the music Brazilian zouk is danced to.",
+      "look": "Close embrace, slow sway"
+    },
+    {
+      "id": "calena",
+      "short": "Salsa caleña",
+      "name": "Salsa caleña",
+      "years": "1970s onward",
+      "place": "Cali, Colombia",
+      "family": "caribbean",
+      "row": 12,
+      "lane": 11,
+      "parents": [
+        {
+          "id": "salsa",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Cali's dancers developed a fast, flicking footwork style of salsa, with acrobatic show forms. Cali calls itself the world capital of salsa.",
+      "look": "Fast footwork, kicks, acrobatic show style"
+    },
+    {
+      "id": "revival",
+      "short": "Swing revival",
+      "name": "Swing revival",
+      "years": "1980s–2000s",
+      "place": "Sweden, New York, Pasadena, then worldwide",
+      "family": "swing",
+      "row": 13,
+      "lane": 3,
+      "parents": [
+        {
+          "id": "lindy",
+          "kind": "lineage"
+        },
+        {
+          "id": "balboa",
+          "kind": "lineage"
+        },
+        {
+          "id": "solojazz",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Dancers rebuilt the Lindy Hop from old film and from surviving dancers; Frankie Manning came out of retirement in 1986. Sweden's Herräng camp (1982) and the 1990s neo-swing boom spread it worldwide, and Balboa had its own revival with original dancers teaching.",
+      "look": "Savoy-style and Hollywood-style Lindy, Balboa, 20s and 30s Charleston",
+      "note": "The revival scene was largely white and middle class, and it has since worked to center the dance's Black origins and living Black swing lineages."
+    },
+    {
+      "id": "kizomba",
+      "short": "Kizomba",
+      "name": "Kizomba",
+      "years": "1980s onward",
+      "place": "Luanda, then Portugal and Europe",
+      "family": "african",
+      "row": 13,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "semba",
+          "kind": "lineage"
+        },
+        {
+          "id": "zouk",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Kizomba music emerged in Angola in the 1980s from semba with Caribbean zouk influence. Its slow, grounded close-embrace dance spread through Portugal and Europe in the 2000s and is a common fusion ingredient.",
+      "look": "Close embrace, walking, weight transfer through the torso"
+    },
+    {
+      "id": "fiverhythms",
+      "short": "5Rhythms & ecstatic",
+      "name": "5Rhythms and ecstatic dance",
+      "years": "Late 1970s",
+      "place": "California, then worldwide",
+      "family": "modern",
+      "root": true,
+      "form": "solo",
+      "row": 13,
+      "lane": 7,
+      "parents": [],
+      "summary": "Gabrielle Roth developed 5Rhythms, a free-form moving meditation through five rhythms, in the late 1970s, and ecstatic dance events grew from similar ideas. They are not partner dances, but their communities and focus on presence overlap with fusion.",
+      "look": "Free movement, no set steps, inner attention",
+      "note": "Shown as an influence on fusion, not a direct parent."
+    },
+    {
+      "id": "dancehall",
+      "short": "Dancehall",
+      "name": "Jamaican dancehall",
+      "years": "1980s onward",
+      "place": "Kingston, Jamaica",
+      "family": "street",
+      "form": "solo",
+      "row": 13,
+      "lane": 9,
+      "parents": [
+        {
+          "id": "african",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Jamaican sound-system culture produced a constant stream of named dance moves drawing on African-Jamaican movement. Dancehall music and dance became a direct source of reggaeton.",
+      "look": "Named moves, bounce, isolations"
+    },
+    {
+      "id": "champeta",
+      "short": "Champeta",
+      "name": "Champeta",
+      "years": "1980s onward",
+      "place": "Cartagena and Colombia's Caribbean coast",
+      "family": "caribbean",
+      "row": 13,
+      "lane": 11,
+      "parents": [
+        {
+          "id": "soukous",
+          "kind": "lineage"
+        },
+        {
+          "id": "cumbia",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Afro-Colombian communities danced to Congolese soukous and West African records played on huge sound systems (picós), then made their own champeta music. Long stigmatized, it is now a point of Afro-Colombian pride.",
+      "look": "Hip-led grooves, close partnering, footwork"
+    },
+    {
+      "id": "lambada",
+      "short": "Lambada",
+      "name": "Lambada",
+      "years": "1980s",
+      "place": "Pará and Bahia, Brazil",
+      "family": "southam",
+      "row": 13,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "carimbo",
+          "kind": "lineage"
+        },
+        {
+          "id": "merengue",
+          "kind": "influence"
+        },
+        {
+          "id": "forro",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Grew from carimbó, merengue and other Caribbean rhythms in northern Brazil and became a worldwide hit in 1989. When the craze faded, dancers kept the movement alive by dancing it to zouk music.",
+      "look": "Close hips, fast turns, swirling skirts"
+    },
+    {
+      "id": "timba",
+      "short": "Timba",
+      "name": "Timba",
+      "years": "1990s onward",
+      "place": "Havana",
+      "family": "caribbean",
+      "row": 14,
+      "lane": 8,
+      "parents": [
+        {
+          "id": "casino",
+          "kind": "lineage"
+        },
+        {
+          "id": "rumba",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Cuban dance music of the 1990s, from NG La Banda and others, that pushed son and salsa toward funk and jazz. Dancers added despelote, loose whole-body movement, and rumba moves to casino.",
+      "look": "Despelote, body waves, rumba accents"
+    },
+    {
+      "id": "reggaeton",
+      "short": "Reggaeton",
+      "name": "Reggaeton and perreo",
+      "years": "1990s onward",
+      "place": "Panama and Puerto Rico",
+      "family": "street",
+      "form": "solo",
+      "row": 14,
+      "lane": 9,
+      "parents": [
+        {
+          "id": "dancehall",
+          "kind": "lineage"
+        },
+        {
+          "id": "hiphop",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Grew from Spanish-language reggae in Panama and dancehall and hip-hop in Puerto Rico. Its dancing, including perreo, is mostly solo or close freestyle without lead and follow, but it shapes bachata urbana and Latin club dancing.",
+      "look": "Dembow bounce, hip isolations"
+    },
+    {
+      "id": "brzouk",
+      "short": "Brazilian zouk",
+      "name": "Brazilian zouk",
+      "years": "1990s onward",
+      "place": "Rio de Janeiro, then worldwide",
+      "family": "southam",
+      "row": 14,
+      "lane": 12,
+      "parents": [
+        {
+          "id": "lambada",
+          "kind": "lineage"
+        },
+        {
+          "id": "zouk",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Lambada dancers in Rio kept dancing to Caribbean zouk records after lambada music faded, and the dance became Brazilian zouk. It is known for flowing torso and head movement and an elastic connection, and it shaped sensual bachata.",
+      "look": "Head movement, body waves, elastic connection"
+    },
+    {
+      "id": "tangonuevo",
+      "short": "Tango nuevo",
+      "name": "Tango nuevo",
+      "years": "1990s onward",
+      "place": "Buenos Aires",
+      "family": "southam",
+      "row": 14,
+      "lane": 13,
+      "parents": [
+        {
+          "id": "tango",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Dancers including Gustavo Naveira and Fabián Salas analyzed tango's structure into options rather than set steps, opening the embrace when useful and adding colgadas and volcadas. This approach is a direct source of fusion's lead-follow technique.",
+      "look": "Open and close embrace, colgadas, volcadas"
+    },
+    {
+      "id": "bluesscene",
+      "short": "Blues dance scene",
+      "name": "Modern blues dance scene",
+      "years": "Early 2000s on",
+      "place": "US swing scenes, then Europe",
+      "family": "blues",
+      "row": 15,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "revival",
+          "kind": "lineage"
+        },
+        {
+          "id": "slowdrag",
+          "kind": "influence"
+        },
+        {
+          "id": "ballroomin",
+          "kind": "influence"
+        },
+        {
+          "id": "chicagotriple",
+          "kind": "influence"
+        },
+        {
+          "id": "texasshuffle",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Late-night blues rooms at Lindy events grew into a scene of their own. Early scenes often danced slow and close to non-blues music. In the 2010s many organizers turned to Black musicians, historians and old footage to teach historical idioms such as the slow drag, strut, Chicago Triple and Texas shuffle.",
+      "look": "Groundedness, pulse, lag behind the beat, rhythm play"
+    },
+    {
+      "id": "sensual",
+      "short": "Sensual bachata",
+      "name": "Sensual bachata",
+      "years": "2000s onward",
+      "place": "Spain, then Europe",
+      "family": "caribbean",
+      "row": 15,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "bachata",
+          "kind": "lineage"
+        },
+        {
+          "id": "brzouk",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Spanish dancers added body waves, head movement and close connection, much of it from Brazilian zouk, to bachata. It spread widely through European festivals.",
+      "look": "Body waves, head rolls, close connection"
+    },
+    {
+      "id": "fusion",
+      "short": "Fusion",
+      "name": "Fusion",
+      "years": "2004–08 onward",
+      "place": "Portland, San Francisco, Houston, then worldwide",
+      "family": "modern",
+      "row": 16,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "bluesscene",
+          "kind": "lineage"
+        },
+        {
+          "id": "tangonuevo",
+          "kind": "lineage"
+        },
+        {
+          "id": "wcs",
+          "kind": "lineage"
+        },
+        {
+          "id": "contact",
+          "kind": "lineage"
+        },
+        {
+          "id": "kizomba",
+          "kind": "influence"
+        },
+        {
+          "id": "hiphop",
+          "kind": "influence"
+        },
+        {
+          "id": "fiverhythms",
+          "kind": "influence"
+        }
+      ],
+      "summary": "A Portland workshop in December 2004 paired blues and tango classes, and the first national fusion event, the Houston Fusion Exchange, ran in January 2008. Fusion is improvised partner dancing that borrows technique from any style to fit the music, separates roles from gender and puts consent up front. It is one of the few dances here that trace to the postmodern root as well as the African and European ones.",
+      "look": "Musical choice of style, switch roles, open to close frame",
+      "note": "Several blues scenes report losing blues community when fusion took over blues spaces, and many now hold the two separately."
+    },
+    {
+      "id": "urbankiz",
+      "short": "Urban kiz",
+      "name": "Urban kiz and tarraxinha",
+      "years": "2010s",
+      "place": "France and Angola, then worldwide",
+      "family": "african",
+      "row": 17,
+      "lane": 5,
+      "parents": [
+        {
+          "id": "kizomba",
+          "kind": "lineage"
+        },
+        {
+          "id": "zouk",
+          "kind": "influence"
+        },
+        {
+          "id": "hiphop",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Developed in France from kizomba, with zouk-like flow and hip-hop timing: more linear movement, pauses and musical hits. Tarraxinha, a slower and more intimate cousin, is danced to minimal electronic beats.",
+      "look": "Linear walks, pauses, hits, smooth gliding"
+    },
+    {
+      "id": "micro",
+      "short": "Micro fusion",
+      "name": "Micro fusion",
+      "years": "Recent",
+      "place": "Fusion scenes",
+      "family": "modern",
+      "row": 17,
+      "lane": 7,
+      "parents": [
+        {
+          "id": "fusion",
+          "kind": "lineage"
+        }
+      ],
+      "summary": "Fusion at small scale with high attention to detail: rise and fall, rotation, shapes, stillness, isolations, tone and texture. Attention and quality define it, not the size of the movement, so it works in open frame as well as close embrace.",
+      "look": "Small movement, full attention, quiet frame",
+      "note": "It grew inside the fusion scene and is hard to date precisely."
+    },
+    {
+      "id": "urbana",
+      "short": "Bachata urbana",
+      "name": "Bachata urbana",
+      "years": "2010s",
+      "place": "US and Europe",
+      "family": "caribbean",
+      "row": 17,
+      "lane": 10,
+      "parents": [
+        {
+          "id": "bachata",
+          "kind": "lineage"
+        },
+        {
+          "id": "hiphop",
+          "kind": "lineage"
+        },
+        {
+          "id": "reggaeton",
+          "kind": "influence"
+        }
+      ],
+      "summary": "Bachata danced to R&B, pop and urban remixes, with hip-hop footwork, isolations and styling. It sits between bachata moderna and street dance.",
+      "look": "Footwork, isolations, musical hits"
+    }
+  ]
+}

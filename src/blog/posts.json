@@ -1,16 +1,9 @@
 [
   {
-    "slug": "thursday-floorcraft",
-    "title": "Thursday floorcraft",
-    "date": "2026-10-06",
-    "tags": ["community"],
-    "excerpt": "What to expect if you are new on the floor: no partner required, and no need to dance every song."
-  },
-  {
-    "slug": "welcome-to-the-blog",
-    "title": "Welcome to the blog",
-    "date": "2026-10-13",
-    "tags": ["community", "teaching"],
-    "excerpt": "Notes from the Harmonic Fusion floor — classes, community, and what we are learning together."
+    "slug": "2026-10-13-hhistory",
+    "title": "History of Fusion and other Dance Styles",
+    "date": "2026-10-10",
+    "tags": ["history"],
+    "excerpt": "A look at the history of Fusion and other dance styles."
   }
 ]
