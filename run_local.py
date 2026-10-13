@@ -16,7 +16,7 @@ from urllib.parse import urlparse, unquote
 
 # Configuration
 PORT = 8747
-WATCH_EXTENSIONS = {'.html', '.css', '.js'}
+WATCH_EXTENSIONS = {'.html', '.css', '.js', '.md', '.json'}
 POLL_INTERVAL = 0.5  # seconds
 REFRESH_ENDPOINT = '/__refresh_check__'
 LOCAL_URL = f'http://localhost:{PORT}/'
@@ -29,6 +29,10 @@ last_change_time: float = time.time()
 # /calendar/{eventId} → calendar/event.html (shareable event pages)
 EVENT_PATH_RE = re.compile(r'^/calendar/([^/]+)/?$')
 EVENT_RESERVED = {'event.html', 'event.js', 'index.html'}
+
+# /blog/{slug} → blog/post.html (shareable blog posts)
+BLOG_PATH_RE = re.compile(r'^/blog/([^/]+)/?$')
+BLOG_RESERVED = {'index.html', 'post.html', 'blog.js', 'blog.css', 'posts.json', 'posts'}
 
 
 class AutoRefreshHandler(http.server.SimpleHTTPRequestHandler):
@@ -69,6 +73,19 @@ class AutoRefreshHandler(http.server.SimpleHTTPRequestHandler):
                 and not (SRC_ROOT / 'calendar' / segment).exists()
             ):
                 self.serve_html_with_refresh('calendar/event.html')
+                return
+
+        # Shareable blog URLs: /blog/{slug}
+        blog_match = BLOG_PATH_RE.match(path)
+        if blog_match:
+            segment = blog_match.group(1)
+            if (
+                segment
+                and segment not in BLOG_RESERVED
+                and '.' not in segment
+                and not (SRC_ROOT / 'blog' / segment).exists()
+            ):
+                self.serve_html_with_refresh('blog/post.html')
                 return
 
         file_path = path.lstrip('/')
@@ -196,7 +213,7 @@ def main():
     with socketserver.TCPServer(("", PORT), AutoRefreshHandler) as httpd:
         print(f"Server running at {LOCAL_URL}")
         print(f"Serving from {SRC_ROOT}")
-        print("Watching for changes in .html, .css, and .js files...")
+        print("Watching for changes in .html, .css, .js, .md, and .json files...")
         print("Press Ctrl+C to stop the server")
         threading.Timer(0.5, lambda: webbrowser.open(LOCAL_URL)).start()
         try:
