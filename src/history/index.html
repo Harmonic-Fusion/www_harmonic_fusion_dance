@@ -265,6 +265,13 @@
   </footer>
 </div>
     </div>
+
+    <!-- Remark42 Comments -->
+    <section class="comments" id="comments" aria-label="Comments" style="max-width: 92ch; margin: 3rem auto 2rem; padding: 0 1rem;">
+        <h2 style="font-family: var(--font-display); font-weight: 800; font-size: 1.75rem; margin-bottom: 1rem;">Comments</h2>
+        <div id="remark42"></div>
+    </section>
+
     <script>
 fetch("lineage.json")
   .then((response) => {
@@ -594,5 +601,37 @@ requestAnimationFrame(() => centerOn(byId[startId], true));
   });
 </script>
     <script src="../nav.js"></script>
+    <script>
+        // Initialize Remark42 for history page
+        (function() {
+            const remarkConfig = {
+                host: 'https://comments.harmonicfusion.dance',
+                site_id: 'harmonicfusiondance',
+                theme: 'light',
+                locale: 'en',
+                show_email: false,
+                simple_view: false,
+                components: ['embed'],
+                max_shallow_level: 10,
+                counter: true,
+                vote: 'all',
+                emoji: true,
+            };
+            
+            (function(c, l, a, m, e, n, t) {
+                c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(m); t.async = 1; t.src = e;
+                n = l.getElementsByTagName(m)[0]; n.parentNode.insertBefore(t, n);
+            })(window, document, 'REMARK42', 'script', 'https://comments.harmonicfusion.dance/web/client.js');
+            
+            const checkLoaded = setInterval(() => {
+                if (window.REMARK42) {
+                    clearInterval(checkLoaded);
+                    window.REMARK42.init(remarkConfig);
+                    window.REMARK42.embed();
+                }
+            }, 100);
+        })();
+    </script>
 </body>
 </html>
