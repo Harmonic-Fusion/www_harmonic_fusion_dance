@@ -26,6 +26,7 @@ export default function (eleventyConfig) {
         "src/logo.png": "logo.png",
         "src/manifest.json": "manifest.json",
         "src/CNAME": "CNAME",
+        "src/robots.txt": "robots.txt",
     });
     eleventyConfig.addPassthroughCopy("src/**/*.css");
 

@@ -4,6 +4,9 @@ import { site } from "../site.ts";
 
 const ICON_SIZES = [16, 32, 64, 96, 128, 256, 512];
 
+// Added to every page's robots meta to opt out of AI training.
+const AI_OPT_OUT = "noai, noimageai";
+
 export interface HeadProps {
     title: string;
     description?: string;
@@ -70,7 +73,8 @@ export function Head({
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             {description && <meta name="description" content={description} />}
-            {robots && <meta name="robots" content={robots} />}
+            <meta name="robots" content={[robots, AI_OPT_OUT].filter(Boolean).join(", ")} />
+            <meta name="tdm-reservation" content="1" />
             {themeColorScheme ? (
                 <>
                     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />

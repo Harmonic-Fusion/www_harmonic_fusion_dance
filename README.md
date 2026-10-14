@@ -63,6 +63,7 @@ The site is built with [Eleventy](https://www.11ty.dev/). Pages and layouts are 
 - `src/scripts/lib/config.ts` - Calendar ID, optional Google Calendar API key, and Remark42 settings
 - `src/history/lineage.json` - Dance lineage data for the history page
 - `src/CNAME` - Custom domain for GitHub Pages
+- `src/robots.txt` / `nginx.conf` - Crawler allowlist (search engines and link previews only). Keep the two in sync.
 
 ## Google Calendar API Setup
 

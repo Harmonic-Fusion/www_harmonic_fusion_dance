@@ -1,0 +1,23 @@
+# Search engines may index the site.
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: Slurp
+Allow: /
+
+# Link previews for shared pages and events.
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: LinkedInBot
+User-agent: WhatsApp
+User-agent: TelegramBot
+Allow: /
+
+# Everything else, including AI crawlers and training tokens
+# (GPTBot, ClaudeBot, CCBot, Google-Extended, Applebot-Extended, ...).
+# Keep this list in sync with the $blocked_bot map in nginx.conf.
+User-agent: *
+Disallow: /
