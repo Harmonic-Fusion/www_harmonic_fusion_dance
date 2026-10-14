@@ -39,6 +39,8 @@ Keep your production domain referrers as well (e.g. `https://harmonicfusion.danc
 
 The `Dockerfile` builds the same site and serves it with nginx.
 
+Production comments run as the Railway service `remark42-comments` (defined in `.railway/railway.ts`). After changing that file, run `railway config plan` / `railway config apply`. The custom domain `comments.harmonicfusion.dance` needs a CNAME to Railway and the verify TXT record Railway shows under the service domain settings.
+
 ## Layout
 
 The site is built with [Eleventy](https://www.11ty.dev/). Pages and layouts are TSX components rendered to static HTML at build time; no React is shipped to the browser. Browser code is TypeScript bundled by esbuild.
