@@ -1,0 +1,27 @@
+# Local Remark42. The site server (run_local.py) stays on port 8747.
+# Comment data is stored in ./var and is not committed.
+services:
+  remark42:
+    image: umputun/remark42:latest
+    container_name: remark42
+    restart: unless-stopped
+    entrypoint:
+      - /bin/sh
+      - -c
+      - 'if ! grep -q data-comment-radius /srv/web/iframe.html; then sed -i "s#</head>#<style data-comment-radius>form{border-radius:8px !important}</style></head>#" /srv/web/iframe.html; fi; exec /init.sh /srv/remark42 server'
+    command: []
+    ports:
+      - "127.0.0.1:8748:8080"
+    environment:
+      REMARK_URL: http://localhost:8748
+      SITE: harmonicfusiondance
+      SECRET: local-dev-only-secret
+      ALLOWED_HOSTS: http://localhost:8747,http://127.0.0.1:8747
+      AUTH_ANON: "true"
+      AUTH_SAME_SITE: none
+      AUTH_SEND_JWT_HEADER: "true"
+      EMOJI: "true"
+      STORE_BOLT_PATH: /srv/var/db
+      BACKUP_PATH: /srv/var/backup
+    volumes:
+      - ./var:/srv/var

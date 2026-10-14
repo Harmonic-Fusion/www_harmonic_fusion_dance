@@ -7,10 +7,11 @@ Static landing page for the Harmonic Blues Fusion dance community, ready to host
 Requires Python 3 (standard library only).
 
 ```bash
+docker compose up -d
 python3 run_local.py
 ```
 
-Opens [http://localhost:8747/](http://localhost:8747/) in your browser by default.
+Opens [http://localhost:8747/](http://localhost:8747/) in your browser by default. On localhost, comments use Remark42 at [http://localhost:8748/](http://localhost:8748/). Stop comments with `docker compose down`.
 
 The server auto-reloads the browser when `.html`, `.css`, or `.js` files change. Press `Ctrl+C` to stop.
 

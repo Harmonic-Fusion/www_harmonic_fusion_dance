@@ -197,6 +197,10 @@
     line-height: 1.7;
 }
 
+.comments {
+    margin-top: 3.5rem;
+}
+
 .blog-article > *:first-child {
     margin-top: 0;
 }

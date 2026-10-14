@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
     remark: {
         host: 'https://comments.harmonicfusion.dance',
         site_id: 'harmonicfusiondance',
-        theme: 'light',
+        theme: 'dark',
         locale: 'en',
         show_email: false,
         simple_view: false,
@@ -26,46 +26,41 @@ window.initRemark = function (page) {
     var defaults = (window.SITE_CONFIG && window.SITE_CONFIG.remark) || {};
     var remarkConfig = Object.assign({}, defaults, page);
     var host = String(remarkConfig.host || '').replace(/\/$/, '');
+    var pageHost = window.location.hostname;
+    if (pageHost === 'localhost' || pageHost === '127.0.0.1') {
+        host = 'http://' + pageHost + ':8748';
+    }
+    remarkConfig.host = host;
 
     if (!host || !remarkConfig.site_id) return;
 
-    var settled = false;
-    var checkLoaded;
-    var giveUp;
+    window.remark_config = remarkConfig;
+
+    var components = remarkConfig.components || ['embed'];
+    var pending = components.length;
+    var failed = false;
 
     function hideComments() {
-        if (settled) return;
-        settled = true;
-        clearInterval(checkLoaded);
-        clearTimeout(giveUp);
+        failed = true;
         if (comments) comments.hidden = true;
     }
 
     function showComments() {
-        if (settled) return;
-        settled = true;
-        clearInterval(checkLoaded);
-        clearTimeout(giveUp);
-        window.REMARK42.init(remarkConfig);
-        window.REMARK42.embed();
+        if (failed) return;
         if (comments) comments.hidden = false;
     }
 
-    (function (c, l, a, m, e, n, t) {
-        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
-        t = l.createElement(m);
-        t.async = 1;
-        t.src = e;
-        t.onerror = hideComments;
-        n = l.getElementsByTagName(m)[0];
-        n.parentNode.insertBefore(t, n);
-    })(window, document, 'REMARK42', 'script', host + '/web/client.js');
-
-    checkLoaded = setInterval(function () {
-        if (window.REMARK42 && typeof window.REMARK42.init === 'function') {
-            showComments();
-        }
-    }, 100);
-
-    giveUp = setTimeout(hideComments, 8000);
+    components.forEach(function (name) {
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.async = true;
+        script.defer = true;
+        script.src = host + '/web/' + name + '.mjs';
+        script.onload = function () {
+            pending -= 1;
+            if (pending === 0) showComments();
+        };
+        script.onerror = hideComments;
+        (document.head || document.body).appendChild(script);
+    });
 };
