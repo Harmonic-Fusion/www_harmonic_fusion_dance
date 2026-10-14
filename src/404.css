@@ -1,0 +1,98 @@
+.notfound {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.notfound-code {
+    font-size: clamp(4.5rem, 22vw, 9rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.05em;
+}
+
+/* The middle 0 is a spinning dancer twirling in place. */
+.notfound-spin {
+    display: inline-block;
+    animation: twirl 3s ease-in-out infinite;
+}
+
+@keyframes twirl {
+    0%, 60%, 100% { transform: rotate(0deg); }
+    80% { transform: rotate(360deg); }
+}
+
+.notfound-dancers {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.15em;
+    line-height: 1;
+}
+
+.notfound-dancers span {
+    display: inline-block;
+    animation: sway 1.6s ease-in-out infinite;
+}
+
+.notfound-dancers span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+@keyframes sway {
+    0%, 100% { transform: translateY(0) rotate(-6deg); }
+    50% { transform: translateY(-0.12em) rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .notfound-spin,
+    .notfound-dancers span {
+        animation: none;
+    }
+}
+
+.notfound-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 1.5rem;
+}
+
+.notfound-text {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 32rem;
+    margin: 0.75rem auto 0;
+}
+
+.notfound-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.notfound-actions .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.notfound-actions .btn-secondary:hover {
+    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}

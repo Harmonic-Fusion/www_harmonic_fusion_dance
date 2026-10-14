@@ -1,0 +1,26 @@
+{
+  "name": "harmonic-fusion-dance",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "concurrently -k -n js,11ty \"pnpm:watch:js\" \"pnpm:serve\"",
+    "serve": "eleventy --serve",
+    "build": "rm -rf _site && node scripts/build-js.mjs && eleventy",
+    "watch:js": "node scripts/build-js.mjs --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "concurrently": "^9.2.1",
+    "esbuild": "^0.28.2",
+    "marked": "^18.1.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

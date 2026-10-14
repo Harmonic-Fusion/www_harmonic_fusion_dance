@@ -1,3 +1,10 @@
+---
+title: "Welcome to the blog"
+date: 2026-10-12
+tags: ["community"]
+excerpt: "Harmonic Fusion now has a place for notes from the floor: class ideas, community news, and things we are figuring out together."
+---
+
 Harmonic Fusion now has a place for notes from the floor: class ideas, community news, and things we are figuring out together.
 
 ## What you will find here

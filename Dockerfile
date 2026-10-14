@@ -1,11 +1,20 @@
-# Multi-stage build for static site with nginx
+# Build the static site with Eleventy + esbuild
+FROM node:22-alpine AS build
+WORKDIR /app
+RUN corepack enable
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+COPY . .
+RUN pnpm build
+
+# Serve it with nginx
 FROM nginx:alpine AS production
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copy static site files
-COPY src/ /usr/share/nginx/html/
+# Copy built site
+COPY --from=build /app/_site/ /usr/share/nginx/html/
 
 # Expose port
 EXPOSE 8080

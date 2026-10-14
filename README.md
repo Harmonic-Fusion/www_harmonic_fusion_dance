@@ -1,19 +1,24 @@
 # Harmonic Blues Fusion - Landing Page
 
-Static landing page for the Harmonic Blues Fusion dance community, ready to host on GitHub Pages.
+Static site for the Harmonic Blues Fusion dance community, built with Eleventy and hosted on GitHub Pages.
 
 ## Local development
 
-Requires Python 3 (standard library only).
+Requires Node.js 22 (see `.nvmrc`) and pnpm (`corepack enable` installs the version pinned in `package.json`).
 
 ```bash
-docker compose up -d
-python3 run_local.py
+pnpm install
+docker compose up -d   # Remark42 comments on localhost:8748 (optional)
+pnpm dev
 ```
 
-Opens [http://localhost:8747/](http://localhost:8747/) in your browser by default. On localhost, comments use Remark42 at [http://localhost:8748/](http://localhost:8748/). Stop comments with `docker compose down`.
+Serves the site at [http://localhost:8747/](http://localhost:8747/) and reloads the browser when templates, markdown, CSS, or TypeScript change. On localhost, comments use Remark42 at [http://localhost:8748/](http://localhost:8748/). Stop comments with `docker compose down`.
 
-The server auto-reloads the browser when `.html`, `.css`, or `.js` files change. Press `Ctrl+C` to stop.
+| Command | What it does |
+|---|---|
+| `pnpm dev` | Eleventy dev server plus esbuild in watch mode |
+| `pnpm build` | Production build into `_site/` |
+| `pnpm typecheck` | Type-check templates and browser code |
 
 ### Calendar API on localhost
 
@@ -29,22 +34,35 @@ Keep your production domain referrers as well (e.g. `https://harmonicfusion.danc
 1. Create a new GitHub repository
 2. Push these files to the repository
 3. Go to Settings → Pages → Build and deployment → Source: **GitHub Actions**
-4. After the first push to `main`, the Deploy GitHub Pages workflow publishes `src/`
+4. After the first push to `main`, the Deploy GitHub Pages workflow builds the site and publishes `_site/`
 5. Your site will be live at `https://YOUR_USERNAME.github.io/REPO_NAME/` (or your custom domain)
+
+The `Dockerfile` builds the same site and serves it with nginx.
 
 ## Layout
 
-- `src/` — site files served in production and by the local server
-- `run_local.py` — local dev server (port 8747, auto-refresh)
-- `.github/workflows/pages.yml` — deploys `src/` to GitHub Pages
+The site is built with [Eleventy](https://www.11ty.dev/). Pages and layouts are TSX components rendered to static HTML at build time; no React is shipped to the browser. Browser code is TypeScript bundled by esbuild.
 
-### Key files in `src/`
+- `src/*.11ty.tsx`, `src/*/index.11ty.tsx` — pages (one per URL)
+- `src/_includes/components/` — shared TSX components (`Base`, `Head`, `Nav`, `Footer`, `EventModal`, `Comments`)
+- `src/_includes/layouts/post.11ty.tsx` — blog post layout
+- `src/_includes/site.ts` — site name, origin, analytics ID, contact email
+- `src/blog/posts/*.md` — blog posts (see `AGENTS.md`)
+- `src/scripts/pages/*.ts` — one browser bundle per page, written to `_site/js/`
+- `src/scripts/lib/` — shared browser modules
+- `src/*.css`, `src/images/`, `src/icons/` — copied to the output as-is
+- `eleventy.config.js` — Eleventy config, including the `/calendar/{eventId}` dev rewrite
+- `scripts/build-js.mjs` — esbuild config
+- `.github/workflows/pages.yml` — builds and deploys to GitHub Pages
 
-- `index.html` - Main page
-- `site.css` / `home.css` - Shared and home styling
-- `calendar.js` - Calendar events loading and display
-- `config.js` - Calendar ID and optional Google Calendar API key
-- `CNAME` - Custom domain for GitHub Pages
+### Key files
+
+- `src/index.11ty.tsx` - Main page
+- `src/site.css` / `src/home.css` - Shared and home styling
+- `src/scripts/pages/calendar.ts` - Calendar events loading and display
+- `src/scripts/lib/config.ts` - Calendar ID, optional Google Calendar API key, and Remark42 settings
+- `src/history/lineage.json` - Dance lineage data for the history page
+- `src/CNAME` - Custom domain for GitHub Pages
 
 ## Google Calendar API Setup
 
@@ -81,11 +99,11 @@ The calendar can use either the Google Calendar API v3 (recommended) or fall bac
    - Check only "Google Calendar API"
    - Click "Save"
 
-6. **Configure the API Key in `src/config.js`**
-   - Open `src/config.js`
+6. **Configure the API Key in `src/scripts/lib/config.ts`**
+   - Open `src/scripts/lib/config.ts`
    - Set `googleCalendarApiKey` to your key:
-     ```javascript
-     googleCalendarApiKey: 'YOUR_API_KEY_HERE'
+     ```ts
+     googleCalendarApiKey: "YOUR_API_KEY_HERE",
      ```
 
 ### Is it Safe to Use a Public API Key?
@@ -131,7 +149,7 @@ If you see a `403 (Forbidden)` error when using the API, check the following:
    - **Local testing**: add `http://localhost:8747/*` and `http://127.0.0.1:8747/*` (or temporarily remove referrer restrictions)
 
 4. **Check Calendar ID Format**
-   - The calendar ID in `src/config.js` should match your Google Calendar email
+   - The calendar ID in `src/scripts/lib/config.ts` should match your Google Calendar email
    - For Gmail calendars, use the full email: `yourcalendar@gmail.com`
    - For other calendar types, you may need the full calendar ID from Calendar settings
 
@@ -144,4 +162,4 @@ If issues persist, the calendar will automatically fall back to the iCal feed me
 
 ## Customization
 
-Edit files under `src/` (for example `src/index.html` and `src/site.css`) for content and styling.
+Edit files under `src/` (for example `src/index.11ty.tsx` and `src/site.css`) for content and styling.

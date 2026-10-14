@@ -1,3 +1,10 @@
+---
+title: "Thursday floorcraft"
+date: 2026-10-13
+tags: ["community"]
+excerpt: "The floor is the same every Thursday, and the dancing is not. People arrive from blues, swing, salsa, and from nowhere in particular."
+---
+
 The floor is the same every Thursday, and the dancing is not. People arrive from blues, swing, salsa, and from nowhere in particular, and the hour settles once the first song does.
 
 ## If you are new
