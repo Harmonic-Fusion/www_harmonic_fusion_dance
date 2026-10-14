@@ -1,9 +1,16 @@
 [
   {
-    "slug": "2026-10-13-hhistory",
-    "title": "History of Fusion and other Dance Styles",
-    "date": "2026-10-10",
-    "tags": ["history"],
-    "excerpt": "A look at the history of Fusion and other dance styles."
+    "slug": "welcome-to-the-blog",
+    "title": "Welcome to the blog",
+    "date": "2026-10-12",
+    "tags": ["community"],
+    "excerpt": "Harmonic Fusion now has a place for notes from the floor: class ideas, community news, and things we are figuring out together."
+  },
+  {
+    "slug": "thursday-floorcraft",
+    "title": "Thursday floorcraft",
+    "date": "2026-10-13",
+    "tags": ["community"],
+    "excerpt": "The floor is the same every Thursday, and the dancing is not. People arrive from blues, swing, salsa, and from nowhere in particular."
   }
 ]

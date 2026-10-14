@@ -265,6 +265,13 @@
   </footer>
 </div>
     </div>
+
+    <!-- Remark42 Comments -->
+    <section class="comments" id="comments" aria-label="Comments" hidden style="max-width: 92ch; margin: 3rem auto 2rem; padding: 0 1rem;">
+        <h2 style="font-family: var(--font-display); font-weight: 800; font-size: 1.75rem; margin-bottom: 1rem;">Comments</h2>
+        <div id="remark42"></div>
+    </section>
+
     <script>
 fetch("lineage.json")
   .then((response) => {
@@ -594,5 +601,12 @@ requestAnimationFrame(() => centerOn(byId[startId], true));
   });
 </script>
     <script src="../nav.js"></script>
+    <script src="../config.js"></script>
+    <script>
+        initRemark({
+            url: location.origin + '/history/',
+            page_title: 'History of dance'
+        });
+    </script>
 </body>
 </html>

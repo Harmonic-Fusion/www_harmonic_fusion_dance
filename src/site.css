@@ -296,6 +296,10 @@ body {
     margin-top: 1rem;
 }
 
+#comments[hidden] {
+    display: none;
+}
+
 @media (min-width: 640px) {
     .site-nav-inner {
         padding: 0.875rem 2rem;

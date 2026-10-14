@@ -248,6 +248,15 @@
 
         loadingEl.hidden = true;
         contentEl.hidden = false;
+
+        if (typeof window.initRemark === 'function') {
+            var path = window.location.pathname.replace(/\/index\.html$/, '');
+            if (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
+            window.initRemark({
+                url: window.location.origin + path,
+                page_title: post.title
+            });
+        }
     }
 
     function setPagerLink(link, titleNode, neighbor) {
