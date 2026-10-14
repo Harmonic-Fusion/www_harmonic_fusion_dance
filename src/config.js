@@ -20,24 +20,52 @@ window.SITE_CONFIG = {
 };
 
 window.initRemark = function (page) {
-    var defaults = window.SITE_CONFIG.remark;
+    var comments = document.getElementById('comments');
+    if (comments) comments.hidden = true;
+
+    var defaults = (window.SITE_CONFIG && window.SITE_CONFIG.remark) || {};
     var remarkConfig = Object.assign({}, defaults, page);
-    var host = remarkConfig.host;
+    var host = String(remarkConfig.host || '').replace(/\/$/, '');
+
+    if (!host || !remarkConfig.site_id) return;
+
+    var settled = false;
+    var checkLoaded;
+    var giveUp;
+
+    function hideComments() {
+        if (settled) return;
+        settled = true;
+        clearInterval(checkLoaded);
+        clearTimeout(giveUp);
+        if (comments) comments.hidden = true;
+    }
+
+    function showComments() {
+        if (settled) return;
+        settled = true;
+        clearInterval(checkLoaded);
+        clearTimeout(giveUp);
+        window.REMARK42.init(remarkConfig);
+        window.REMARK42.embed();
+        if (comments) comments.hidden = false;
+    }
 
     (function (c, l, a, m, e, n, t) {
         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
         t = l.createElement(m);
         t.async = 1;
         t.src = e;
+        t.onerror = hideComments;
         n = l.getElementsByTagName(m)[0];
         n.parentNode.insertBefore(t, n);
     })(window, document, 'REMARK42', 'script', host + '/web/client.js');
 
-    var checkLoaded = setInterval(function () {
+    checkLoaded = setInterval(function () {
         if (window.REMARK42 && typeof window.REMARK42.init === 'function') {
-            clearInterval(checkLoaded);
-            window.REMARK42.init(remarkConfig);
-            window.REMARK42.embed();
+            showComments();
         }
     }, 100);
+
+    giveUp = setTimeout(hideComments, 8000);
 };
