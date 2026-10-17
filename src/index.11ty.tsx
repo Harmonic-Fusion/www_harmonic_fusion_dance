@@ -53,8 +53,8 @@ export default function Home() {
 
                 <div className="announcement">
                     <p>
-                        Our mission is to nurture a vibrant community who dance, play, connect, care, and love. We create harmony
-                        between differences and enrich the fusion dance scene in Eugene through joyful, heart-led gatherings.
+                        Our mission is to nurture a vibrant community who dance, play, connect, and love. We create harmony
+                        between differences and enrich the fusion dance communities through joyful, heart-led gatherings.
                     </p>
                 </div>
 
