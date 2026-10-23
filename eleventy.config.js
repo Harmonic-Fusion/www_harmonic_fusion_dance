@@ -47,6 +47,8 @@ export default function (eleventyConfig) {
             (req, _res, next) => {
                 const match = req.url.match(EVENT_PATH_RE);
                 if (match && match[1] !== "index") req.url = "/calendar/event.html";
+                const path = req.url.split("?")[0];
+                if (path === "/success" || path === "/success/") req.url = "/success.html";
                 next();
             },
         ],

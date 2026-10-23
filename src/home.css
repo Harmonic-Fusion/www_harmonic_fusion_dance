@@ -503,9 +503,22 @@
     letter-spacing: -0.01em;
 }
 
+.signup-header p {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 36rem;
+    margin: 0.75rem auto 0;
+}
+
 .signup-form-wrapper {
     max-width: 100%;
     margin: 0 auto;
+}
+
+.signup-section [data-form] .emailoctopus-error-message,
+.signup-section [data-form] .emailoctopus-success-message {
+    color: var(--text-primary) !important;
 }
 
 .signup-form-wrapper iframe,
