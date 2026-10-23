@@ -8,7 +8,11 @@ services:
     entrypoint:
       - /bin/sh
       - -c
-      - 'if ! grep -q data-comment-radius /srv/web/iframe.html; then sed -i "s#</head>#<style data-comment-radius>form{border-radius:8px !important}</style></head>#" /srv/web/iframe.html; fi; exec /init.sh /srv/remark42 server'
+      - |
+        sed -i 's|<style data-comment-theme>.*</style>||' /srv/web/iframe.html
+        style=$$(tr '\n' ' ' < /remark-theme.css)
+        sed -i "s|</head>|<style data-comment-theme>$$style</style></head>|" /srv/web/iframe.html
+        exec /init.sh /srv/remark42 server
     command: []
     ports:
       - "127.0.0.1:8748:8080"
@@ -25,3 +29,4 @@ services:
       BACKUP_PATH: /srv/var/backup
     volumes:
       - ./var:/srv/var
+      - ./docker/remark-theme.css:/remark-theme.css:ro

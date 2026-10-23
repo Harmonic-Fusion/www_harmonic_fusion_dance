@@ -37,16 +37,17 @@ export default function Post(data: EleventyData & PostData) {
                 <article id="post-content" data-slug={data.slug} data-title={data.title}>
                     <header className="blog-post-header">
                         <h1>{data.title}</h1>
-                        <p className="blog-post-meta">
+                        <div className="blog-post-meta">
+                            <span className="blog-post-author">Harmonic Fusion</span>
                             <time dateTime={isoDate(data.page.date)}>{formatPostDate(data.page.date)}</time>
-                        </p>
-                        <BlogTags tags={data.tags} />
+                            <BlogTags tags={data.tags} />
+                        </div>
                     </header>
                     <div className="blog-article" dangerouslySetInnerHTML={{ __html: data.content ?? "" }} />
                     {(older || newer) && (
                         <nav className="post-pager" aria-label="More posts">
-                            <PagerLink post={older} rel="prev" label="Previous Post" />
-                            <PagerLink post={newer} rel="next" label="Next Post" />
+                            <PagerLink post={older} rel="prev" label="Previous" />
+                            <PagerLink post={newer} rel="next" label="Next" />
                         </nav>
                     )}
 

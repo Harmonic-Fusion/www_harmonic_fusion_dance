@@ -6,13 +6,18 @@ export interface RemarkConfig {
     page_title?: string;
     theme?: "light" | "dark";
     locale?: string;
-    show_email?: boolean;
+    show_email_subscription?: boolean;
+    show_rss_subscription?: boolean;
+    show_telegram_subscription?: boolean;
     simple_view?: boolean;
+    no_footer?: boolean;
     components?: string[];
     max_shallow_level?: number;
     counter?: boolean;
     vote?: string;
     emoji?: boolean;
+    /** CSS variables applied inside the Remark42 iframe. Dark theme reads the numbered tokens. */
+    custom_properties?: Record<string, string>;
 }
 
 declare global {
@@ -31,13 +36,42 @@ export const SITE_CONFIG = {
         site_id: "harmonicfusiondance",
         theme: "dark",
         locale: "en",
-        show_email: false,
-        simple_view: false,
+        show_email_subscription: false,
+        show_rss_subscription: false,
+        show_telegram_subscription: false,
+        // Drops the markdown toolbar so the composer is a single field and a send button.
+        simple_view: true,
+        no_footer: true,
         components: ["embed"],
         max_shallow_level: 10,
         counter: true,
         vote: "all",
         emoji: true,
+        custom_properties: {
+            "--font-family":
+                '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif',
+            "--color20": "#e8e8ed",
+            "--color10": "#ffffff",
+            "--color33": "#f0b56a",
+            "--color35": "#8e8e93",
+            "--color1": "#a1a1a6",
+            "--color11": "#8e8e93",
+            "--color9": "#DF9535",
+            "--color29": "#DF9535",
+            "--color15": "#DF9535",
+            "--color7": "#000000",
+            "--color8": "#000000",
+            "--color5": "#f2f2f4",
+            "--color6": "#000000",
+            "--color19": "#1a1a1a",
+            "--color18": "#2a2a2a",
+            "--color36": "rgba(255, 255, 255, 0.16)",
+            "--color13": "#8e8e93",
+            "--color12": "223, 149, 53",
+            "--color30": "196, 92, 92",
+            "--color47": "rgba(223, 149, 53, 0.45)",
+            "--color42": "rgba(223, 149, 53, 0.28)",
+        },
     } satisfies RemarkConfig as RemarkConfig,
 };
 

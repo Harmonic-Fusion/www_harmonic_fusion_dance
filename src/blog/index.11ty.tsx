@@ -42,13 +42,15 @@ export default function Blog({ collections }: EleventyData) {
                         <li key={post.url} data-tags={JSON.stringify(post.data.tags ?? [])}>
                             <article className="blog-card">
                                 <a className="blog-card-link" href={post.url}>
-                                    <p className="blog-card-date">
-                                        <time dateTime={isoDate(post.date)}>{formatPostDate(post.date)}</time>
-                                    </p>
                                     <h2>{post.data.title}</h2>
                                     <p className="blog-card-excerpt">{post.data.excerpt ?? ""}</p>
                                 </a>
-                                <BlogTags tags={post.data.tags} />
+                                <div className="blog-card-meta">
+                                    <p className="blog-card-date">
+                                        <time dateTime={isoDate(post.date)}>{formatPostDate(post.date)}</time>
+                                    </p>
+                                    <BlogTags tags={post.data.tags} />
+                                </div>
                             </article>
                         </li>
                     ))}

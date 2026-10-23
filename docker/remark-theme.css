@@ -1,0 +1,39 @@
+/* Injected into the Remark42 iframe. The widget's dark theme hardcodes its accent,
+   and the composer is a thick bordered slab. This flattens it into a quiet thread. */
+
+:root .dark {
+    --primary-color: 223, 149, 53 !important;
+    --primary-brighter-color: 240, 181, 106 !important;
+    --primary-darker-color: 184, 116, 32 !important;
+}
+
+form {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+}
+
+form > div {
+    background: transparent !important;
+}
+
+form textarea {
+    background: transparent !important;
+    color: rgb(232, 232, 237) !important;
+}
+
+form textarea::placeholder {
+    color: rgb(110, 110, 115) !important;
+}
+
+form button {
+    background-color: rgb(223, 149, 53) !important;
+    color: rgb(0, 0, 0) !important;
+    border-color: transparent !important;
+    border-radius: 999px !important;
+}
+
+div:has(> a[href="markdown-help.html"]) {
+    display: none !important;
+}
