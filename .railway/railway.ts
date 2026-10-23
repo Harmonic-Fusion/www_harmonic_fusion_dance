@@ -24,6 +24,9 @@ export default defineRailway(() => {
     healthcheckTimeout: 100,
     replicas: { "us-west2": 1 },
     networking: { privateNetworkEndpoint: "wwwharmonicfusiondance" },
+    // TODO: add "www.harmonicfusion.dance" here once it's added as a custom
+    // domain in the Railway dashboard, then re-run `railway config pull`.
+    domains: ["harmonicfusion.dance"],
   });
 
   // Env vars are unmanaged (set in Railway / secret manager). SECRET is required.

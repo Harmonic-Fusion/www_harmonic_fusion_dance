@@ -119,6 +119,19 @@ export default function Home() {
                     </p>
                 </div>
 
+                <section className="signup-section" aria-labelledby="subscribe-heading">
+                    <div className="signup-header">
+                        <h2 id="subscribe-heading">Subscribe</h2>
+                        <p>Email notes about fusion dance events and community gatherings.</p>
+                    </div>
+                    <div
+                        className="signup-form-wrapper"
+                        dangerouslySetInnerHTML={{
+                            __html: `<script async src="https://eocampaign1.com/form/7f939a92-cead-11f1-bde6-7bc7b014b4dd.js" data-form="7f939a92-cead-11f1-bde6-7bc7b014b4dd"></script>`,
+                        }}
+                    ></div>
+                </section>
+
                 <Footer />
             </div>
 
