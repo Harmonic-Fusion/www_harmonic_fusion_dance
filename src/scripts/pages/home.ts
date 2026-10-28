@@ -8,10 +8,12 @@ import {
     setupEventModal,
     showEventModal,
 } from "../lib/events.ts";
+import { fetchBffSheet, formatDeadlineCompact, submissionsLabel, type BffSheet } from "../lib/bff.ts";
 import { initNav } from "../lib/nav.ts";
 
 initNav();
 initCarousel();
+initBffBanner();
 
 // Next upcoming events for the home page
 type UpcomingEvent = CalendarEvent & { start: Date };
@@ -215,4 +217,33 @@ if (listEl) {
 
     setupEventModal();
     onReady(() => loadUpcoming(listEl));
+}
+
+function initBffBanner(): void {
+    const banner = document.querySelector<HTMLAnchorElement>(".bff-banner");
+    const stats = banner?.querySelector<HTMLElement>("[data-banner-stats]");
+    if (!banner || !stats) return;
+
+    const render = (sheet: BffSheet) => {
+        const parts: string[] = [];
+        if (sheet.submissions !== null) {
+            parts.push(`${sheet.submissions.toLocaleString("en-US")} ${submissionsLabel(sheet.submissions)}`);
+        }
+        parts.push(
+            sheet.deadline <= Date.now() ? "Entries closed" : `Closes ${formatDeadlineCompact(sheet.deadline)}`,
+        );
+        if (sheet.drawing) parts.push(`Drawing ${sheet.drawing}`);
+        stats.textContent = parts.join(" · ");
+    };
+
+    const load = () => {
+        fetchBffSheet(banner.dataset.sheetUrl)
+            .then(render)
+            .catch(() => {
+                stats.textContent = "All-Access passes to Barefoot Fusion Festival";
+            });
+    };
+
+    load();
+    window.setInterval(load, 60_000);
 }

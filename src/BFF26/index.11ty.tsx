@@ -1,12 +1,10 @@
 import { Base } from "../_includes/components/Base.tsx";
 import { Footer } from "../_includes/components/Footer.tsx";
 import { site } from "../_includes/site.ts";
+import { BFF_SHEET_URL } from "../scripts/lib/bff.ts";
 
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeWuIkgshEZGwvVRlyh8H3JvQWSKbIeYD85H2xufsb3Oxj_qA/viewform?embedded=true";
-
-const SHEET_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTiI1mMxBk1XrKofOyqX4F6eCzOCxgdwguJ2sfSl2zXcpQRG6fWNlbwkH-9bPPJk6O9byx5ygxGLxFO/pub?gid=1549021748&single=true&output=csv";
 
 const SHARE_URL = `${site.origin}/BFF26/`;
 const SHARE_TEXT =
@@ -29,7 +27,7 @@ export default function Bff26() {
             All-Access passes to Barefoot Fusion Festival 2026, November 20–22
             in Portland.
           </p>
-          <div className="bff-live" data-sheet-url={SHEET_URL}>
+          <div className="bff-live" data-sheet-url={BFF_SHEET_URL}>
             <div className="bff-countdown" role="timer" aria-live="off">
               <p className="bff-countdown-label">Entries close…</p>
               <div className="bff-countdown-units">

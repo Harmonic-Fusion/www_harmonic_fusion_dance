@@ -2,6 +2,7 @@ import { Base } from "./_includes/components/Base.tsx";
 import { EventModal } from "./_includes/components/EventModal.tsx";
 import { Footer } from "./_includes/components/Footer.tsx";
 import { site } from "./_includes/site.ts";
+import { BFF_SHEET_URL } from "./scripts/lib/bff.ts";
 
 const SLIDES = [
     ["DSC_7336.jpg", "Eugene Fusion dancers"],
@@ -50,6 +51,16 @@ export default function Home() {
                     <img src="/logo.png" alt="Harmonic Fusion logo" style={{ display: "block" }} />
                     <h1 style={{ display: "block", width: "100%", textAlign: "center" }}>Harmonic Fusion</h1>
                 </div>
+
+                <a className="bff-banner" href="/BFF26/" data-sheet-url={BFF_SHEET_URL}>
+                    <span className="bff-banner-body">
+                        <span className="bff-banner-title">BFF Pass Giveaway</span>
+                        <span className="bff-banner-stats" data-banner-stats>
+                            Loading entries…
+                        </span>
+                    </span>
+                    <span className="bff-banner-cta">Enter</span>
+                </a>
 
                 <div className="announcement">
                     <p>
