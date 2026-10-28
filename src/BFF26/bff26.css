@@ -1,0 +1,159 @@
+.bff-header {
+    text-align: center;
+}
+
+.bff-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.bff-header .lede {
+    font-size: 1.0625rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 36rem;
+    margin: 0 auto;
+    text-wrap: balance;
+}
+
+.bff-live {
+    margin-top: 1.75rem;
+}
+
+.bff-countdown-label {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.bff-countdown-units {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(3.25rem, 4.5rem));
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.bff-countdown-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.bff-countdown-name {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+.bff-countdown-closed {
+    display: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.bff-countdown.is-closed .bff-countdown-units,
+.bff-countdown.is-closed .bff-countdown-label {
+    display: none;
+}
+
+.bff-countdown.is-closed .bff-countdown-closed {
+    display: block;
+}
+
+.bff-meta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+    margin: 1rem 0 0;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+}
+
+.bff-meta [data-stat="submissions"],
+.bff-meta [data-stat="drawing"] {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.bff-meta-sep {
+    color: var(--text-tertiary);
+}
+
+.bff-share {
+    text-align: center;
+    margin: 1.75rem 0;
+}
+
+.bff-share h2 {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.bff-share-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.bff-share-native {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.bff-share-native:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.bff-share-status:empty {
+    display: none;
+}
+
+.bff-share-status {
+    margin: 0.75rem 0 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.bff-frame {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.bff-frame iframe {
+    display: block;
+    width: 100%;
+    height: 2200px;
+    border: 0;
+}
+
+@media (max-width: 640px) {
+    .bff-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .bff-frame iframe {
+        height: 2500px;
+    }
+}
+
+@media (min-width: 640px) {
+    .bff-header h1 {
+        font-size: 2.25rem;
+    }
+}
