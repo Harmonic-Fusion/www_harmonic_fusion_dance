@@ -24,7 +24,7 @@ export default function Bff26() {
         <header className="bff-header">
           <h1>BFF Pass Giveaway</h1>
           <p className="lede">
-            All-Access passes to Barefoot Fusion Festival 2026, November 20–22
+            All-Access passes to Barefoot Fusion Festival 2026, November 20 - 22
             in Portland.
           </p>
           <div className="bff-live" data-sheet-url={BFF_SHEET_URL}>
@@ -32,19 +32,27 @@ export default function Bff26() {
               <p className="bff-countdown-label">Entries close…</p>
               <div className="bff-countdown-units">
                 <div className="bff-countdown-unit">
-                  <span className="bff-countdown-value" data-unit="days">—</span>
+                  <span className="bff-countdown-value" data-unit="days">
+                    —
+                  </span>
                   <span className="bff-countdown-name">days</span>
                 </div>
                 <div className="bff-countdown-unit">
-                  <span className="bff-countdown-value" data-unit="hours">—</span>
+                  <span className="bff-countdown-value" data-unit="hours">
+                    —
+                  </span>
                   <span className="bff-countdown-name">hours</span>
                 </div>
                 <div className="bff-countdown-unit">
-                  <span className="bff-countdown-value" data-unit="minutes">—</span>
+                  <span className="bff-countdown-value" data-unit="minutes">
+                    —
+                  </span>
                   <span className="bff-countdown-name">minutes</span>
                 </div>
                 <div className="bff-countdown-unit">
-                  <span className="bff-countdown-value" data-unit="seconds">—</span>
+                  <span className="bff-countdown-value" data-unit="seconds">
+                    —
+                  </span>
                   <span className="bff-countdown-name">seconds</span>
                 </div>
               </div>
