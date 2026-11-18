@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.waiver-page {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 2rem 1rem;
+}
+
+.waiver-header {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.waiver-header h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.waiver-form-container {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #111;
+}
+
+.waiver-form-iframe {
+    display: block;
+    width: 100%;
+    height: min(90vh, 1200px);
+    border: 0;
+}
